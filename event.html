@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Event Management</title>
+</head>
+<body bgcolor="#CCFF99">
+<center><h3 style="font-weight:bolder">EVENT MANAGEMENT</h3>
+<table height="400" width="300">
+<tr>
+<td>USER NAME</td>
+<td><input type="text" name="uname"/></td>
+</tr>
+<tr >
+<td>TYPE OF EVENT</td>
+<td><select name="type" required>
+<option name="bdy">Birthday</option>
+<option name="gtg">Reunion</option>
+<option name="party">Party</option>
+<option name="concert">Concert</option>
+<option name="drama">Drama</option>
+</td >
+</tr >
+<tr >
+<td >DATE</td>
+<td><input type="date" name="date" placeholder="yyyy-mm-dd"
+pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"required></td>
+</tr >
+<tr >
+<td >TIME</td>
+<td><input type="number" name="time"  placeholder="HH:MM"/></td>
+</tr >     
+<tr >
+<td>VENUE</td>
+<td><input type="text" name="venue"/></td>
+</ tr>
+<tr >
+<td>CITY</ td>
+<td><input type="text" name="city"/></td>
+</tr >
+</table>
+<input type="button" name="submit" value="SUBMIT" />
+</center>
+</body>
+</html>
